@@ -1,0 +1,86 @@
+.navbar.bg-light {
+  border: none;
+}
+
+.navbar.bg-light .form-control {
+  border-radius: 4.25rem;
+}
+
+.upload {
+  color: rgb(57, 14, 211);
+  margin-left: 5px;
+  font-weight: bold;
+  display: none;
+}
+
+.notification {
+  color: rgb(209, 88, 109);
+  margin-left: 5px;
+  font-weight: bold;
+  display: none;
+}
+
+.favourites {
+  color: rgb(57, 14, 211);
+  margin-left: 5px;
+  font-weight: bold;
+  display: none;
+}
+
+.profile {
+  color: rgb(180, 29, 226);
+  margin-left: 5px;
+  font-weight: bold;
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .vl {
+    border-left: none;
+    border-bottom: 1px solid black;
+    width: 20%;
+  }
+
+  li {
+    margin-left: 45%;
+  }
+
+  a {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .vl {
+    border-left: none;
+    border-bottom: 1px solid black;
+    width: 20%;
+  }
+
+  li {
+    margin-left: 40%;
+  }
+
+  .upload {
+    display: inline-block;
+  }
+
+  .notification {
+    display: inline-block;
+  }
+
+  .favourites {
+    display: inline-block;
+  }
+
+  .profile {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
