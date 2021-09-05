@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Modal, Button } from "@material-ui/core";
+import { Modal } from "@material-ui/core";
 
 function getModalStyle() {
   const top = 50;
@@ -25,13 +25,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Card = (props) => {
+  console.log(`Card ${props.open}`);
   const classes = useStyles();
   const [modalStyle] = useState(getModalStyle);
 
   return (
-    <Modal open={props.openUpload} onClose={() => props.setOpenUpload(false)}>
+    <Modal open={props.open} onClose={() => props.close(false)}>
       <div style={modalStyle} className={`ImageUpload ${classes.paper}`}>
-        <div className="container-fluid">hello</div>
+        {props.children}
       </div>
     </Modal>
   );
