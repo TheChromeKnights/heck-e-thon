@@ -11,6 +11,7 @@ import Notification from "./navComponent/Notification";
 import Button from "@material-ui/core/Button";
 import Favorites from "./navComponent/Favourites";
 import Profile from "./navComponent/Profile";
+import profileLogo from "../../assets/images/man.png";
 export default function Navbar() {
   const [openUpload, setOpenUpload] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
@@ -75,7 +76,7 @@ export default function Navbar() {
                   <Avatar className={classes.small} />
                 </Tooltip> */}
             <img
-              src="https://img-premium.flaticon.com/png/512/2202/premium/2202112.png?token=exp=1630766468~hmac=e0c1251a2efd2668128610bb3e21dcba"
+              src={profileLogo}
               width="25"
               height="25"
               className="d-inline-block align-top logo_image"

@@ -1,0 +1,231 @@
+.login_card {
+  max-height: 460px;
+  max-width: 60%;
+  min-width: 340px;
+  /* background-image: url("./green.jpg");
+  background-size: cover; */
+  /* box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418); */
+  border: none;
+  background-color: white;
+  /* background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%); */
+}
+
+.small_text {
+  color: gray;
+  font-size: small;
+}
+
+.google_login {
+  width: 70%;
+  transition: 0.2s all;
+  border-radius: 30px;
+}
+
+.google_login:active {
+  transform: scale(0.98);
+}
+
+.google_img {
+  width: 10%;
+  height: 10%;
+  margin-right: 3%;
+}
+
+hr {
+  width: 100%;
+}
+
+.login {
+  color: gray;
+  position: relative;
+  top: -1.8rem;
+}
+
+.form__label__email {
+  position: relative;
+  right: 64%;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.form__label__password {
+  position: relative;
+  right: 64%;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.form__input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid rgb(13, 201, 44);
+  border-radius: 30px;
+  margin-left: 9%;
+}
+
+input[type="password"] {
+  margin-left: 5%;
+}
+
+.form__input:focus {
+  border: 1px solid rgb(13, 201, 44);
+  border-radius: 30px;
+}
+
+.form__input:focus ~ .form__label__email,
+.form__input:not(:placeholder-shown).form__input:not(:focus)
+  ~ .form__label__email {
+  top: -1.5rem;
+  font-size: 0.8rem;
+  background-color: #fff;
+}
+
+.form__input:focus ~ .form__label__password,
+.form__input:not(:placeholder-shown).form__input:not(:focus)
+  ~ .form__label__password {
+  top: -1.5rem;
+  font-size: 0.8rem;
+  background-color: #fff;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.login_button {
+  width: 70%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgb(12, 248, 91);
+  color: white;
+  transition: 0.2s all;
+}
+
+.login_button:active {
+  transform: scale(0.98);
+}
+
+a {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background: url("./leaf.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .form__input[type="text"] {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .form__label__email,
+  .form__label__password,
+  .google,
+  .small_text {
+    display: none;
+  }
+
+  .form__input[type="password"] {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  input::placeholder {
+    color: gray;
+  }
+
+  .google_img {
+    width: 30%;
+  }
+
+  .register {
+    margin-bottom: 20%;
+  }
+
+  .login_button {
+    width: 100%;
+  }
+
+  .login_card {
+    width: 300px;
+    margin-left: 0%;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url("./leaf.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .form__input[type="text"] {
+    width: 90%;
+    margin-left: 0%;
+  }
+
+  .form__label__email,
+  .form__label__password,
+  .google,
+  .small_text {
+    display: none;
+  }
+
+  .form__input[type="password"] {
+    width: 90%;
+    margin-left: 0%;
+  }
+
+  input::placeholder {
+    color: gray;
+  }
+
+  .google_img {
+    width: 30%;
+  }
+
+  .register {
+    margin-bottom: 20%;
+  }
+
+  .login_card {
+    width: 300px;
+    margin-left: 0%;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  body {
+    background: url("./images/leaf.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .login_card {
+    margin-top: 30px;
+    background-color: white;
+    margin-left: 0%;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+  body {
+    background: url("./images/leaf.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .login_card {
+    margin-top: 30px;
+    background-color: white;
+    margin-left: 0%;
+    width: 300px;
+  }
+}
